@@ -1,0 +1,528 @@
+--- Structure ---
+
+.
+├── output
+│   ├── output.csv
+│   └── tts_app.exe
+├── output.csv
+├── requirements.txt
+├── tts_app.py
+└── voices_file_generator.py
+
+2 directories, 6 files
+
+--- File: ./.gitignore ---
+output
+.venv
+.idea
+--- File: ./out.txt ---
+
+--- File: ./output.csv ---
+SuggestedCodec,FriendlyName,Status,VoiceTag,Name,Locale,ShortName,Gender
+audio-24khz-48kbitrate-mono-mp3,Microsoft Adri Online (Natural) - Afrikaans (South Africa),GA,,"Microsoft Server Speech Text to Speech Voice (af-ZA, AdriNeural)",af-ZA,af-ZA-AdriNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Willem Online (Natural) - Afrikaans (South Africa),GA,,"Microsoft Server Speech Text to Speech Voice (af-ZA, WillemNeural)",af-ZA,af-ZA-WillemNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Anila Online (Natural) - Albanian (Albania),GA,,"Microsoft Server Speech Text to Speech Voice (sq-AL, AnilaNeural)",sq-AL,sq-AL-AnilaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ilir Online (Natural) - Albanian (Albania),GA,,"Microsoft Server Speech Text to Speech Voice (sq-AL, IlirNeural)",sq-AL,sq-AL-IlirNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ameha Online (Natural) - Amharic (Ethiopia),GA,,"Microsoft Server Speech Text to Speech Voice (am-ET, AmehaNeural)",am-ET,am-ET-AmehaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mekdes Online (Natural) - Amharic (Ethiopia),GA,,"Microsoft Server Speech Text to Speech Voice (am-ET, MekdesNeural)",am-ET,am-ET-MekdesNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Amina Online (Natural) - Arabic (Algeria),GA,,"Microsoft Server Speech Text to Speech Voice (ar-DZ, AminaNeural)",ar-DZ,ar-DZ-AminaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ismael Online (Natural) - Arabic (Algeria),GA,,"Microsoft Server Speech Text to Speech Voice (ar-DZ, IsmaelNeural)",ar-DZ,ar-DZ-IsmaelNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ali Online (Natural) - Arabic (Bahrain),GA,,"Microsoft Server Speech Text to Speech Voice (ar-BH, AliNeural)",ar-BH,ar-BH-AliNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Laila Online (Natural) - Arabic (Bahrain),GA,,"Microsoft Server Speech Text to Speech Voice (ar-BH, LailaNeural)",ar-BH,ar-BH-LailaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Salma Online (Natural) - Arabic (Egypt),GA,,"Microsoft Server Speech Text to Speech Voice (ar-EG, SalmaNeural)",ar-EG,ar-EG-SalmaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Shakir Online (Natural) - Arabic (Egypt),GA,,"Microsoft Server Speech Text to Speech Voice (ar-EG, ShakirNeural)",ar-EG,ar-EG-ShakirNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Bassel Online (Natural) - Arabic (Iraq),GA,,"Microsoft Server Speech Text to Speech Voice (ar-IQ, BasselNeural)",ar-IQ,ar-IQ-BasselNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rana Online (Natural) - Arabic (Iraq),GA,,"Microsoft Server Speech Text to Speech Voice (ar-IQ, RanaNeural)",ar-IQ,ar-IQ-RanaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sana Online (Natural) - Arabic (Jordan),GA,,"Microsoft Server Speech Text to Speech Voice (ar-JO, SanaNeural)",ar-JO,ar-JO-SanaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Taim Online (Natural) - Arabic (Jordan),GA,,"Microsoft Server Speech Text to Speech Voice (ar-JO, TaimNeural)",ar-JO,ar-JO-TaimNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Fahed Online (Natural) - Arabic (Kuwait),GA,,"Microsoft Server Speech Text to Speech Voice (ar-KW, FahedNeural)",ar-KW,ar-KW-FahedNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Noura Online (Natural) - Arabic (Kuwait),GA,,"Microsoft Server Speech Text to Speech Voice (ar-KW, NouraNeural)",ar-KW,ar-KW-NouraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Layla Online (Natural) - Arabic (Lebanon),GA,,"Microsoft Server Speech Text to Speech Voice (ar-LB, LaylaNeural)",ar-LB,ar-LB-LaylaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rami Online (Natural) - Arabic (Lebanon),GA,,"Microsoft Server Speech Text to Speech Voice (ar-LB, RamiNeural)",ar-LB,ar-LB-RamiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Iman Online (Natural) - Arabic (Libya),GA,,"Microsoft Server Speech Text to Speech Voice (ar-LY, ImanNeural)",ar-LY,ar-LY-ImanNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Omar Online (Natural) - Arabic (Libya),GA,,"Microsoft Server Speech Text to Speech Voice (ar-LY, OmarNeural)",ar-LY,ar-LY-OmarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jamal Online (Natural) - Arabic (Morocco),GA,,"Microsoft Server Speech Text to Speech Voice (ar-MA, JamalNeural)",ar-MA,ar-MA-JamalNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mouna Online (Natural) - Arabic (Morocco),GA,,"Microsoft Server Speech Text to Speech Voice (ar-MA, MounaNeural)",ar-MA,ar-MA-MounaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Abdullah Online (Natural) - Arabic (Oman),GA,,"Microsoft Server Speech Text to Speech Voice (ar-OM, AbdullahNeural)",ar-OM,ar-OM-AbdullahNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Aysha Online (Natural) - Arabic (Oman),GA,,"Microsoft Server Speech Text to Speech Voice (ar-OM, AyshaNeural)",ar-OM,ar-OM-AyshaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Amal Online (Natural) - Arabic (Qatar),GA,,"Microsoft Server Speech Text to Speech Voice (ar-QA, AmalNeural)",ar-QA,ar-QA-AmalNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Moaz Online (Natural) - Arabic (Qatar),GA,,"Microsoft Server Speech Text to Speech Voice (ar-QA, MoazNeural)",ar-QA,ar-QA-MoazNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Hamed Online (Natural) - Arabic (Saudi Arabia),GA,,"Microsoft Server Speech Text to Speech Voice (ar-SA, HamedNeural)",ar-SA,ar-SA-HamedNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Zariyah Online (Natural) - Arabic (Saudi Arabia),GA,,"Microsoft Server Speech Text to Speech Voice (ar-SA, ZariyahNeural)",ar-SA,ar-SA-ZariyahNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Amany Online (Natural) - Arabic (Syria),GA,,"Microsoft Server Speech Text to Speech Voice (ar-SY, AmanyNeural)",ar-SY,ar-SY-AmanyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Laith Online (Natural) - Arabic (Syria),GA,,"Microsoft Server Speech Text to Speech Voice (ar-SY, LaithNeural)",ar-SY,ar-SY-LaithNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Hedi Online (Natural) - Arabic (Tunisia),GA,,"Microsoft Server Speech Text to Speech Voice (ar-TN, HediNeural)",ar-TN,ar-TN-HediNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Reem Online (Natural) - Arabic (Tunisia),GA,,"Microsoft Server Speech Text to Speech Voice (ar-TN, ReemNeural)",ar-TN,ar-TN-ReemNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Fatima Online (Natural) - Arabic (United Arab Emirates),GA,,"Microsoft Server Speech Text to Speech Voice (ar-AE, FatimaNeural)",ar-AE,ar-AE-FatimaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Hamdan Online (Natural) - Arabic (United Arab Emirates),GA,,"Microsoft Server Speech Text to Speech Voice (ar-AE, HamdanNeural)",ar-AE,ar-AE-HamdanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Maryam Online (Natural) - Arabic (Yemen),GA,,"Microsoft Server Speech Text to Speech Voice (ar-YE, MaryamNeural)",ar-YE,ar-YE-MaryamNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Saleh Online (Natural) - Arabic (Yemen),GA,,"Microsoft Server Speech Text to Speech Voice (ar-YE, SalehNeural)",ar-YE,ar-YE-SalehNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Babek Online (Natural) - Azerbaijani (Azerbaijan),GA,,"Microsoft Server Speech Text to Speech Voice (az-AZ, BabekNeural)",az-AZ,az-AZ-BabekNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Banu Online (Natural) - Azerbaijani (Azerbaijan),GA,,"Microsoft Server Speech Text to Speech Voice (az-AZ, BanuNeural)",az-AZ,az-AZ-BanuNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nabanita Online (Natural) - Bangla (Bangladesh),GA,,"Microsoft Server Speech Text to Speech Voice (bn-BD, NabanitaNeural)",bn-BD,bn-BD-NabanitaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Pradeep Online (Natural) - Bangla (Bangladesh),GA,,"Microsoft Server Speech Text to Speech Voice (bn-BD, PradeepNeural)",bn-BD,bn-BD-PradeepNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Bashkar Online (Natural) - Bangla (India),GA,,"Microsoft Server Speech Text to Speech Voice (bn-IN, BashkarNeural)",bn-IN,bn-IN-BashkarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Tanishaa Online (Natural) - Bengali (India),GA,,"Microsoft Server Speech Text to Speech Voice (bn-IN, TanishaaNeural)",bn-IN,bn-IN-TanishaaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Goran Online (Natural) - Bosnian (Bosnia),GA,,"Microsoft Server Speech Text to Speech Voice (bs-BA, GoranNeural)",bs-BA,bs-BA-GoranNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Vesna Online (Natural) - Bosnian (Bosnia),GA,,"Microsoft Server Speech Text to Speech Voice (bs-BA, VesnaNeural)",bs-BA,bs-BA-VesnaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Borislav Online (Natural) - Bulgarian (Bulgaria),GA,,"Microsoft Server Speech Text to Speech Voice (bg-BG, BorislavNeural)",bg-BG,bg-BG-BorislavNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Kalina Online (Natural) - Bulgarian (Bulgaria),GA,,"Microsoft Server Speech Text to Speech Voice (bg-BG, KalinaNeural)",bg-BG,bg-BG-KalinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nilar Online (Natural) - Burmese (Myanmar),GA,,"Microsoft Server Speech Text to Speech Voice (my-MM, NilarNeural)",my-MM,my-MM-NilarNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Thiha Online (Natural) - Burmese (Myanmar),GA,,"Microsoft Server Speech Text to Speech Voice (my-MM, ThihaNeural)",my-MM,my-MM-ThihaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Enric Online (Natural) - Catalan (Spain),GA,,"Microsoft Server Speech Text to Speech Voice (ca-ES, EnricNeural)",ca-ES,ca-ES-EnricNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Joana Online (Natural) - Catalan (Spain),GA,,"Microsoft Server Speech Text to Speech Voice (ca-ES, JoanaNeural)",ca-ES,ca-ES-JoanaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional),GA,,"Microsoft Server Speech Text to Speech Voice (zh-HK, HiuGaaiNeural)",zh-HK,zh-HK-HiuGaaiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong),GA,,"Microsoft Server Speech Text to Speech Voice (zh-HK, HiuMaanNeural)",zh-HK,zh-HK-HiuMaanNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft WanLung Online (Natural) - Chinese (Hong Kong),GA,,"Microsoft Server Speech Text to Speech Voice (zh-HK, WanLungNeural)",zh-HK,zh-HK-WanLungNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)",zh-CN,zh-CN-XiaoxiaoNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Xiaoyi Online (Natural) - Chinese (Mainland),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)",zh-CN,zh-CN-XiaoyiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yunjian Online (Natural) - Chinese (Mainland),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",zh-CN,zh-CN-YunjianNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yunxi Online (Natural) - Chinese (Mainland),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",zh-CN,zh-CN-YunxiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yunxia Online (Natural) - Chinese (Mainland),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)",zh-CN,zh-CN-YunxiaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yunyang Online (Natural) - Chinese (Mainland),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)",zh-CN,zh-CN-YunyangNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)",zh-CN-liaoning,zh-CN-liaoning-XiaobeiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan),GA,,"Microsoft Server Speech Text to Speech Voice (zh-TW, HsiaoChenNeural)",zh-TW,zh-TW-HsiaoChenNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft YunJhe Online (Natural) - Chinese (Taiwan),GA,,"Microsoft Server Speech Text to Speech Voice (zh-TW, YunJheNeural)",zh-TW,zh-TW-YunJheNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft HsiaoYu Online (Natural) - Chinese (Taiwanese Mandarin),GA,,"Microsoft Server Speech Text to Speech Voice (zh-TW, HsiaoYuNeural)",zh-TW,zh-TW-HsiaoYuNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Xiaoni Online (Natural) - Chinese (Zhongyuan Mandarin Shaanxi),GA,,"Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)",zh-CN-shaanxi,zh-CN-shaanxi-XiaoniNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gabrijela Online (Natural) - Croatian (Croatia),GA,,"Microsoft Server Speech Text to Speech Voice (hr-HR, GabrijelaNeural)",hr-HR,hr-HR-GabrijelaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Srecko Online (Natural) - Croatian (Croatia),GA,,"Microsoft Server Speech Text to Speech Voice (hr-HR, SreckoNeural)",hr-HR,hr-HR-SreckoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Antonin Online (Natural) - Czech (Czech),GA,,"Microsoft Server Speech Text to Speech Voice (cs-CZ, AntoninNeural)",cs-CZ,cs-CZ-AntoninNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Vlasta Online (Natural) - Czech (Czech),GA,,"Microsoft Server Speech Text to Speech Voice (cs-CZ, VlastaNeural)",cs-CZ,cs-CZ-VlastaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Christel Online (Natural) - Danish (Denmark),GA,,"Microsoft Server Speech Text to Speech Voice (da-DK, ChristelNeural)",da-DK,da-DK-ChristelNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jeppe Online (Natural) - Danish (Denmark),GA,,"Microsoft Server Speech Text to Speech Voice (da-DK, JeppeNeural)",da-DK,da-DK-JeppeNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Arnaud Online (Natural) - Dutch (Belgium),GA,,"Microsoft Server Speech Text to Speech Voice (nl-BE, ArnaudNeural)",nl-BE,nl-BE-ArnaudNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Dena Online (Natural) - Dutch (Belgium),GA,,"Microsoft Server Speech Text to Speech Voice (nl-BE, DenaNeural)",nl-BE,nl-BE-DenaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Colette Online (Natural) - Dutch (Netherlands),GA,,"Microsoft Server Speech Text to Speech Voice (nl-NL, ColetteNeural)",nl-NL,nl-NL-ColetteNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Fenna Online (Natural) - Dutch (Netherlands),GA,,"Microsoft Server Speech Text to Speech Voice (nl-NL, FennaNeural)",nl-NL,nl-NL-FennaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Maarten Online (Natural) - Dutch (Netherlands),GA,,"Microsoft Server Speech Text to Speech Voice (nl-NL, MaartenNeural)",nl-NL,nl-NL-MaartenNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Natasha Online (Natural) - English (Australia),GA,,"Microsoft Server Speech Text to Speech Voice (en-AU, NatashaNeural)",en-AU,en-AU-NatashaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft William Online (Natural) - English (Australia),GA,,"Microsoft Server Speech Text to Speech Voice (en-AU, WilliamNeural)",en-AU,en-AU-WilliamNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Clara Online (Natural) - English (Canada),GA,,"Microsoft Server Speech Text to Speech Voice (en-CA, ClaraNeural)",en-CA,en-CA-ClaraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Liam Online (Natural) - English (Canada),GA,,"Microsoft Server Speech Text to Speech Voice (en-CA, LiamNeural)",en-CA,en-CA-LiamNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sam Online (Natural) - English (Hongkong),GA,,"Microsoft Server Speech Text to Speech Voice (en-HK, SamNeural)",en-HK,en-HK-SamNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yan Online (Natural) - English (Hongkong),GA,,"Microsoft Server Speech Text to Speech Voice (en-HK, YanNeural)",en-HK,en-HK-YanNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Neerja Online (Natural) - English (India) (Preview),GA,,"Microsoft Server Speech Text to Speech Voice (en-IN, NeerjaExpressiveNeural)",en-IN,en-IN-NeerjaExpressiveNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Neerja Online (Natural) - English (India),GA,,"Microsoft Server Speech Text to Speech Voice (en-IN, NeerjaNeural)",en-IN,en-IN-NeerjaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Prabhat Online (Natural) - English (India),GA,,"Microsoft Server Speech Text to Speech Voice (en-IN, PrabhatNeural)",en-IN,en-IN-PrabhatNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Connor Online (Natural) - English (Ireland),GA,,"Microsoft Server Speech Text to Speech Voice (en-IE, ConnorNeural)",en-IE,en-IE-ConnorNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Emily Online (Natural) - English (Ireland),GA,,"Microsoft Server Speech Text to Speech Voice (en-IE, EmilyNeural)",en-IE,en-IE-EmilyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Asilia Online (Natural) - English (Kenya),GA,,"Microsoft Server Speech Text to Speech Voice (en-KE, AsiliaNeural)",en-KE,en-KE-AsiliaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Chilemba Online (Natural) - English (Kenya),GA,,"Microsoft Server Speech Text to Speech Voice (en-KE, ChilembaNeural)",en-KE,en-KE-ChilembaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mitchell Online (Natural) - English (New Zealand),GA,,"Microsoft Server Speech Text to Speech Voice (en-NZ, MitchellNeural)",en-NZ,en-NZ-MitchellNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Molly Online (Natural) - English (New Zealand),GA,,"Microsoft Server Speech Text to Speech Voice (en-NZ, MollyNeural)",en-NZ,en-NZ-MollyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Abeo Online (Natural) - English (Nigeria),GA,,"Microsoft Server Speech Text to Speech Voice (en-NG, AbeoNeural)",en-NG,en-NG-AbeoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ezinne Online (Natural) - English (Nigeria),GA,,"Microsoft Server Speech Text to Speech Voice (en-NG, EzinneNeural)",en-NG,en-NG-EzinneNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft James Online (Natural) - English (Philippines),GA,,"Microsoft Server Speech Text to Speech Voice (en-PH, JamesNeural)",en-PH,en-PH-JamesNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rosa Online (Natural) - English (Philippines),GA,,"Microsoft Server Speech Text to Speech Voice (en-PH, RosaNeural)",en-PH,en-PH-RosaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Luna Online (Natural) - English (Singapore),GA,,"Microsoft Server Speech Text to Speech Voice (en-SG, LunaNeural)",en-SG,en-SG-LunaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Wayne Online (Natural) - English (Singapore),GA,,"Microsoft Server Speech Text to Speech Voice (en-SG, WayneNeural)",en-SG,en-SG-WayneNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Leah Online (Natural) - English (South Africa),GA,,"Microsoft Server Speech Text to Speech Voice (en-ZA, LeahNeural)",en-ZA,en-ZA-LeahNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Luke Online (Natural) - English (South Africa),GA,,"Microsoft Server Speech Text to Speech Voice (en-ZA, LukeNeural)",en-ZA,en-ZA-LukeNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Elimu Online (Natural) - English (Tanzania),GA,,"Microsoft Server Speech Text to Speech Voice (en-TZ, ElimuNeural)",en-TZ,en-TZ-ElimuNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Imani Online (Natural) - English (Tanzania),GA,,"Microsoft Server Speech Text to Speech Voice (en-TZ, ImaniNeural)",en-TZ,en-TZ-ImaniNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Libby Online (Natural) - English (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (en-GB, LibbyNeural)",en-GB,en-GB-LibbyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Maisie Online (Natural) - English (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (en-GB, MaisieNeural)",en-GB,en-GB-MaisieNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ryan Online (Natural) - English (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (en-GB, RyanNeural)",en-GB,en-GB-RyanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sonia Online (Natural) - English (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (en-GB, SoniaNeural)",en-GB,en-GB-SoniaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Thomas Online (Natural) - English (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (en-GB, ThomasNeural)",en-GB,en-GB-ThomasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Aria Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, AriaNeural)",en-US,en-US-AriaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ana Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, AnaNeural)",en-US,en-US-AnaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Christopher Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, ChristopherNeural)",en-US,en-US-ChristopherNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Eric Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, EricNeural)",en-US,en-US-EricNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Guy Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, GuyNeural)",en-US,en-US-GuyNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jenny Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, JennyNeural)",en-US,en-US-JennyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Michelle Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, MichelleNeural)",en-US,en-US-MichelleNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Roger Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, RogerNeural)",en-US,en-US-RogerNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Steffan Online (Natural) - English (United States),GA,,"Microsoft Server Speech Text to Speech Voice (en-US, SteffanNeural)",en-US,en-US-SteffanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Anu Online (Natural) - Estonian (Estonia),GA,,"Microsoft Server Speech Text to Speech Voice (et-EE, AnuNeural)",et-EE,et-EE-AnuNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Kert Online (Natural) - Estonian (Estonia),GA,,"Microsoft Server Speech Text to Speech Voice (et-EE, KertNeural)",et-EE,et-EE-KertNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Angelo Online (Natural) - Filipino (Philippines),GA,,"Microsoft Server Speech Text to Speech Voice (fil-PH, AngeloNeural)",fil-PH,fil-PH-AngeloNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Blessica Online (Natural) - Filipino (Philippines),GA,,"Microsoft Server Speech Text to Speech Voice (fil-PH, BlessicaNeural)",fil-PH,fil-PH-BlessicaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Harri Online (Natural) - Finnish (Finland),GA,,"Microsoft Server Speech Text to Speech Voice (fi-FI, HarriNeural)",fi-FI,fi-FI-HarriNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Noora Online (Natural) - Finnish (Finland),GA,,"Microsoft Server Speech Text to Speech Voice (fi-FI, NooraNeural)",fi-FI,fi-FI-NooraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Charline Online (Natural) - French (Belgium),GA,,"Microsoft Server Speech Text to Speech Voice (fr-BE, CharlineNeural)",fr-BE,fr-BE-CharlineNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gerard Online (Natural) - French (Belgium),GA,,"Microsoft Server Speech Text to Speech Voice (fr-BE, GerardNeural)",fr-BE,fr-BE-GerardNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Antoine Online (Natural) - French (Canada),GA,,"Microsoft Server Speech Text to Speech Voice (fr-CA, AntoineNeural)",fr-CA,fr-CA-AntoineNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jean Online (Natural) - French (Canada),GA,,"Microsoft Server Speech Text to Speech Voice (fr-CA, JeanNeural)",fr-CA,fr-CA-JeanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sylvie Online (Natural) - French (Canada),GA,,"Microsoft Server Speech Text to Speech Voice (fr-CA, SylvieNeural)",fr-CA,fr-CA-SylvieNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Denise Online (Natural) - French (France),GA,,"Microsoft Server Speech Text to Speech Voice (fr-FR, DeniseNeural)",fr-FR,fr-FR-DeniseNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Eloise Online (Natural) - French (France),GA,,"Microsoft Server Speech Text to Speech Voice (fr-FR, EloiseNeural)",fr-FR,fr-FR-EloiseNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Henri Online (Natural) - French (France),GA,,"Microsoft Server Speech Text to Speech Voice (fr-FR, HenriNeural)",fr-FR,fr-FR-HenriNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ariane Online (Natural) - French (Switzerland),GA,,"Microsoft Server Speech Text to Speech Voice (fr-CH, ArianeNeural)",fr-CH,fr-CH-ArianeNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Fabrice Online (Natural) - French (Switzerland),GA,,"Microsoft Server Speech Text to Speech Voice (fr-CH, FabriceNeural)",fr-CH,fr-CH-FabriceNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Roi Online (Natural) - Galician (Spain),GA,,"Microsoft Server Speech Text to Speech Voice (gl-ES, RoiNeural)",gl-ES,gl-ES-RoiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sabela Online (Natural) - Galician (Spain),GA,,"Microsoft Server Speech Text to Speech Voice (gl-ES, SabelaNeural)",gl-ES,gl-ES-SabelaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Eka Online (Natural) - Georgian (Georgia),GA,,"Microsoft Server Speech Text to Speech Voice (ka-GE, EkaNeural)",ka-GE,ka-GE-EkaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Giorgi Online (Natural) - Georgian (Georgia),GA,,"Microsoft Server Speech Text to Speech Voice (ka-GE, GiorgiNeural)",ka-GE,ka-GE-GiorgiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ingrid Online (Natural) - German (Austria),GA,,"Microsoft Server Speech Text to Speech Voice (de-AT, IngridNeural)",de-AT,de-AT-IngridNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jonas Online (Natural) - German (Austria),GA,,"Microsoft Server Speech Text to Speech Voice (de-AT, JonasNeural)",de-AT,de-AT-JonasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Amala Online (Natural) - German (Germany),GA,,"Microsoft Server Speech Text to Speech Voice (de-DE, AmalaNeural)",de-DE,de-DE-AmalaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Conrad Online (Natural) - German (Germany),GA,,"Microsoft Server Speech Text to Speech Voice (de-DE, ConradNeural)",de-DE,de-DE-ConradNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Katja Online (Natural) - German (Germany),GA,,"Microsoft Server Speech Text to Speech Voice (de-DE, KatjaNeural)",de-DE,de-DE-KatjaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Killian Online (Natural) - German (Germany),GA,,"Microsoft Server Speech Text to Speech Voice (de-DE, KillianNeural)",de-DE,de-DE-KillianNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jan Online (Natural) - German (Switzerland),GA,,"Microsoft Server Speech Text to Speech Voice (de-CH, JanNeural)",de-CH,de-CH-JanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Leni Online (Natural) - German (Switzerland),GA,,"Microsoft Server Speech Text to Speech Voice (de-CH, LeniNeural)",de-CH,de-CH-LeniNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Athina Online (Natural) - Greek (Greece),GA,,"Microsoft Server Speech Text to Speech Voice (el-GR, AthinaNeural)",el-GR,el-GR-AthinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nestoras Online (Natural) - Greek (Greece),GA,,"Microsoft Server Speech Text to Speech Voice (el-GR, NestorasNeural)",el-GR,el-GR-NestorasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Dhwani Online (Natural) - Gujarati (India),GA,,"Microsoft Server Speech Text to Speech Voice (gu-IN, DhwaniNeural)",gu-IN,gu-IN-DhwaniNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Niranjan Online (Natural) - Gujarati (India),GA,,"Microsoft Server Speech Text to Speech Voice (gu-IN, NiranjanNeural)",gu-IN,gu-IN-NiranjanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Avri Online (Natural) - Hebrew (Israel),GA,,"Microsoft Server Speech Text to Speech Voice (he-IL, AvriNeural)",he-IL,he-IL-AvriNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Hila Online (Natural) - Hebrew (Israel),GA,,"Microsoft Server Speech Text to Speech Voice (he-IL, HilaNeural)",he-IL,he-IL-HilaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Madhur Online (Natural) - Hindi (India),GA,,"Microsoft Server Speech Text to Speech Voice (hi-IN, MadhurNeural)",hi-IN,hi-IN-MadhurNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Swara Online (Natural) - Hindi (India),GA,,"Microsoft Server Speech Text to Speech Voice (hi-IN, SwaraNeural)",hi-IN,hi-IN-SwaraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Noemi Online (Natural) - Hungarian (Hungary),GA,,"Microsoft Server Speech Text to Speech Voice (hu-HU, NoemiNeural)",hu-HU,hu-HU-NoemiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Tamas Online (Natural) - Hungarian (Hungary),GA,,"Microsoft Server Speech Text to Speech Voice (hu-HU, TamasNeural)",hu-HU,hu-HU-TamasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gudrun Online (Natural) - Icelandic (Iceland),GA,,"Microsoft Server Speech Text to Speech Voice (is-IS, GudrunNeural)",is-IS,is-IS-GudrunNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gunnar Online (Natural) - Icelandic (Iceland),GA,,"Microsoft Server Speech Text to Speech Voice (is-IS, GunnarNeural)",is-IS,is-IS-GunnarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ardi Online (Natural) - Indonesian (Indonesia),GA,,"Microsoft Server Speech Text to Speech Voice (id-ID, ArdiNeural)",id-ID,id-ID-ArdiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gadis Online (Natural) - Indonesian (Indonesia),GA,,"Microsoft Server Speech Text to Speech Voice (id-ID, GadisNeural)",id-ID,id-ID-GadisNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Colm Online (Natural) - Irish (Ireland),GA,,"Microsoft Server Speech Text to Speech Voice (ga-IE, ColmNeural)",ga-IE,ga-IE-ColmNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Orla Online (Natural) - Irish (Ireland),GA,,"Microsoft Server Speech Text to Speech Voice (ga-IE, OrlaNeural)",ga-IE,ga-IE-OrlaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Diego Online (Natural) - Italian (Italy),GA,,"Microsoft Server Speech Text to Speech Voice (it-IT, DiegoNeural)",it-IT,it-IT-DiegoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Elsa Online (Natural) - Italian (Italy),GA,,"Microsoft Server Speech Text to Speech Voice (it-IT, ElsaNeural)",it-IT,it-IT-ElsaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Isabella Online (Natural) - Italian (Italy),GA,,"Microsoft Server Speech Text to Speech Voice (it-IT, IsabellaNeural)",it-IT,it-IT-IsabellaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Keita Online (Natural) - Japanese (Japan),GA,,"Microsoft Server Speech Text to Speech Voice (ja-JP, KeitaNeural)",ja-JP,ja-JP-KeitaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nanami Online (Natural) - Japanese (Japan),GA,,"Microsoft Server Speech Text to Speech Voice (ja-JP, NanamiNeural)",ja-JP,ja-JP-NanamiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Dimas Online (Natural) - Javanese (Indonesia),GA,,"Microsoft Server Speech Text to Speech Voice (jv-ID, DimasNeural)",jv-ID,jv-ID-DimasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Siti Online (Natural) - Javanese (Indonesia),GA,,"Microsoft Server Speech Text to Speech Voice (jv-ID, SitiNeural)",jv-ID,jv-ID-SitiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gagan Online (Natural) - Kannada (India),GA,,"Microsoft Server Speech Text to Speech Voice (kn-IN, GaganNeural)",kn-IN,kn-IN-GaganNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sapna Online (Natural) - Kannada (India),GA,,"Microsoft Server Speech Text to Speech Voice (kn-IN, SapnaNeural)",kn-IN,kn-IN-SapnaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Aigul Online (Natural) - Kazakh (Kazakhstan),GA,,"Microsoft Server Speech Text to Speech Voice (kk-KZ, AigulNeural)",kk-KZ,kk-KZ-AigulNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Daulet Online (Natural) - Kazakh (Kazakhstan),GA,,"Microsoft Server Speech Text to Speech Voice (kk-KZ, DauletNeural)",kk-KZ,kk-KZ-DauletNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Piseth Online (Natural) - Khmer (Cambodia),GA,,"Microsoft Server Speech Text to Speech Voice (km-KH, PisethNeural)",km-KH,km-KH-PisethNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sreymom Online (Natural) - Khmer (Cambodia),GA,,"Microsoft Server Speech Text to Speech Voice (km-KH, SreymomNeural)",km-KH,km-KH-SreymomNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft InJoon Online (Natural) - Korean (Korea),GA,,"Microsoft Server Speech Text to Speech Voice (ko-KR, InJoonNeural)",ko-KR,ko-KR-InJoonNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft SunHi Online (Natural) - Korean (Korea),GA,,"Microsoft Server Speech Text to Speech Voice (ko-KR, SunHiNeural)",ko-KR,ko-KR-SunHiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Chanthavong Online (Natural) - Lao (Laos),GA,,"Microsoft Server Speech Text to Speech Voice (lo-LA, ChanthavongNeural)",lo-LA,lo-LA-ChanthavongNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Keomany Online (Natural) - Lao (Laos),GA,,"Microsoft Server Speech Text to Speech Voice (lo-LA, KeomanyNeural)",lo-LA,lo-LA-KeomanyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Everita Online (Natural) - Latvian (Latvia),GA,,"Microsoft Server Speech Text to Speech Voice (lv-LV, EveritaNeural)",lv-LV,lv-LV-EveritaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nils Online (Natural) - Latvian (Latvia),GA,,"Microsoft Server Speech Text to Speech Voice (lv-LV, NilsNeural)",lv-LV,lv-LV-NilsNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Leonas Online (Natural) - Lithuanian (Lithuania),GA,,"Microsoft Server Speech Text to Speech Voice (lt-LT, LeonasNeural)",lt-LT,lt-LT-LeonasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ona Online (Natural) - Lithuanian (Lithuania),GA,,"Microsoft Server Speech Text to Speech Voice (lt-LT, OnaNeural)",lt-LT,lt-LT-OnaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Aleksandar Online (Natural) - Macedonian (Republic of North Macedonia),GA,,"Microsoft Server Speech Text to Speech Voice (mk-MK, AleksandarNeural)",mk-MK,mk-MK-AleksandarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Marija Online (Natural) - Macedonian (Republic of North Macedonia),GA,,"Microsoft Server Speech Text to Speech Voice (mk-MK, MarijaNeural)",mk-MK,mk-MK-MarijaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Osman Online (Natural) - Malay (Malaysia),GA,,"Microsoft Server Speech Text to Speech Voice (ms-MY, OsmanNeural)",ms-MY,ms-MY-OsmanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yasmin Online (Natural) - Malay (Malaysia),GA,,"Microsoft Server Speech Text to Speech Voice (ms-MY, YasminNeural)",ms-MY,ms-MY-YasminNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Midhun Online (Natural) - Malayalam (India),GA,,"Microsoft Server Speech Text to Speech Voice (ml-IN, MidhunNeural)",ml-IN,ml-IN-MidhunNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sobhana Online (Natural) - Malayalam (India),GA,,"Microsoft Server Speech Text to Speech Voice (ml-IN, SobhanaNeural)",ml-IN,ml-IN-SobhanaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Grace Online (Natural) - Maltese (Malta),GA,,"Microsoft Server Speech Text to Speech Voice (mt-MT, GraceNeural)",mt-MT,mt-MT-GraceNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Joseph Online (Natural) - Maltese (Malta),GA,,"Microsoft Server Speech Text to Speech Voice (mt-MT, JosephNeural)",mt-MT,mt-MT-JosephNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Aarohi Online (Natural) - Marathi (India),GA,,"Microsoft Server Speech Text to Speech Voice (mr-IN, AarohiNeural)",mr-IN,mr-IN-AarohiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Manohar Online (Natural) - Marathi (India),GA,,"Microsoft Server Speech Text to Speech Voice (mr-IN, ManoharNeural)",mr-IN,mr-IN-ManoharNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Bataa Online (Natural) - Mongolian (Mongolia),GA,,"Microsoft Server Speech Text to Speech Voice (mn-MN, BataaNeural)",mn-MN,mn-MN-BataaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yesui Online (Natural) - Mongolian (Mongolia),GA,,"Microsoft Server Speech Text to Speech Voice (mn-MN, YesuiNeural)",mn-MN,mn-MN-YesuiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Hemkala Online (Natural) - Nepali (Nepal),GA,,"Microsoft Server Speech Text to Speech Voice (ne-NP, HemkalaNeural)",ne-NP,ne-NP-HemkalaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sagar Online (Natural) - Nepali (Nepal),GA,,"Microsoft Server Speech Text to Speech Voice (ne-NP, SagarNeural)",ne-NP,ne-NP-SagarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Finn Online (Natural) - Norwegian (Bokm�l Norway),GA,,"Microsoft Server Speech Text to Speech Voice (nb-NO, FinnNeural)",nb-NO,nb-NO-FinnNeural,Male
+audio-24khz-48kbitrate-mono-mp3,"Microsoft Pernille Online (Natural) - Norwegian (Bokm�l, Norway)",GA,,"Microsoft Server Speech Text to Speech Voice (nb-NO, PernilleNeural)",nb-NO,nb-NO-PernilleNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft GulNawaz Online (Natural) - Pashto (Afghanistan),GA,,"Microsoft Server Speech Text to Speech Voice (ps-AF, GulNawazNeural)",ps-AF,ps-AF-GulNawazNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Latifa Online (Natural) - Pashto (Afghanistan),GA,,"Microsoft Server Speech Text to Speech Voice (ps-AF, LatifaNeural)",ps-AF,ps-AF-LatifaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Dilara Online (Natural) - Persian (Iran),GA,,"Microsoft Server Speech Text to Speech Voice (fa-IR, DilaraNeural)",fa-IR,fa-IR-DilaraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Farid Online (Natural) - Persian (Iran),GA,,"Microsoft Server Speech Text to Speech Voice (fa-IR, FaridNeural)",fa-IR,fa-IR-FaridNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Marek Online (Natural) - Polish (Poland),GA,,"Microsoft Server Speech Text to Speech Voice (pl-PL, MarekNeural)",pl-PL,pl-PL-MarekNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Zofia Online (Natural) - Polish (Poland),GA,,"Microsoft Server Speech Text to Speech Voice (pl-PL, ZofiaNeural)",pl-PL,pl-PL-ZofiaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Antonio Online (Natural) - Portuguese (Brazil),GA,,"Microsoft Server Speech Text to Speech Voice (pt-BR, AntonioNeural)",pt-BR,pt-BR-AntonioNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Francisca Online (Natural) - Portuguese (Brazil),GA,,"Microsoft Server Speech Text to Speech Voice (pt-BR, FranciscaNeural)",pt-BR,pt-BR-FranciscaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Duarte Online (Natural) - Portuguese (Portugal),GA,,"Microsoft Server Speech Text to Speech Voice (pt-PT, DuarteNeural)",pt-PT,pt-PT-DuarteNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Raquel Online (Natural) - Portuguese (Portugal),GA,,"Microsoft Server Speech Text to Speech Voice (pt-PT, RaquelNeural)",pt-PT,pt-PT-RaquelNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Alina Online (Natural) - Romanian (Romania),GA,,"Microsoft Server Speech Text to Speech Voice (ro-RO, AlinaNeural)",ro-RO,ro-RO-AlinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Emil Online (Natural) - Romanian (Romania),GA,,"Microsoft Server Speech Text to Speech Voice (ro-RO, EmilNeural)",ro-RO,ro-RO-EmilNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Dmitry Online (Natural) - Russian (Russia),GA,,"Microsoft Server Speech Text to Speech Voice (ru-RU, DmitryNeural)",ru-RU,ru-RU-DmitryNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Svetlana Online (Natural) - Russian (Russia),GA,,"Microsoft Server Speech Text to Speech Voice (ru-RU, SvetlanaNeural)",ru-RU,ru-RU-SvetlanaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nicholas Online (Natural) - Serbian (Serbia),GA,,"Microsoft Server Speech Text to Speech Voice (sr-RS, NicholasNeural)",sr-RS,sr-RS-NicholasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sophie Online (Natural) - Serbian (Serbia),GA,,"Microsoft Server Speech Text to Speech Voice (sr-RS, SophieNeural)",sr-RS,sr-RS-SophieNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sameera Online (Natural) - Sinhala (Sri Lanka),GA,,"Microsoft Server Speech Text to Speech Voice (si-LK, SameeraNeural)",si-LK,si-LK-SameeraNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Thilini Online (Natural) - Sinhala (Sri Lanka),GA,,"Microsoft Server Speech Text to Speech Voice (si-LK, ThiliniNeural)",si-LK,si-LK-ThiliniNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Lukas Online (Natural) - Slovak (Slovakia),GA,,"Microsoft Server Speech Text to Speech Voice (sk-SK, LukasNeural)",sk-SK,sk-SK-LukasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Viktoria Online (Natural) - Slovak (Slovakia),GA,,"Microsoft Server Speech Text to Speech Voice (sk-SK, ViktoriaNeural)",sk-SK,sk-SK-ViktoriaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Petra Online (Natural) - Slovenian (Slovenia),GA,,"Microsoft Server Speech Text to Speech Voice (sl-SI, PetraNeural)",sl-SI,sl-SI-PetraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rok Online (Natural) - Slovenian (Slovenia),GA,,"Microsoft Server Speech Text to Speech Voice (sl-SI, RokNeural)",sl-SI,sl-SI-RokNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Muuse Online (Natural) - Somali (Somalia),GA,,"Microsoft Server Speech Text to Speech Voice (so-SO, MuuseNeural)",so-SO,so-SO-MuuseNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ubax Online (Natural) - Somali (Somalia),GA,,"Microsoft Server Speech Text to Speech Voice (so-SO, UbaxNeural)",so-SO,so-SO-UbaxNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Elena Online (Natural) - Spanish (Argentina),GA,,"Microsoft Server Speech Text to Speech Voice (es-AR, ElenaNeural)",es-AR,es-AR-ElenaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Tomas Online (Natural) - Spanish (Argentina),GA,,"Microsoft Server Speech Text to Speech Voice (es-AR, TomasNeural)",es-AR,es-AR-TomasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Marcelo Online (Natural) - Spanish (Bolivia),GA,,"Microsoft Server Speech Text to Speech Voice (es-BO, MarceloNeural)",es-BO,es-BO-MarceloNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sofia Online (Natural) - Spanish (Bolivia),GA,,"Microsoft Server Speech Text to Speech Voice (es-BO, SofiaNeural)",es-BO,es-BO-SofiaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Catalina Online (Natural) - Spanish (Chile),GA,,"Microsoft Server Speech Text to Speech Voice (es-CL, CatalinaNeural)",es-CL,es-CL-CatalinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Lorenzo Online (Natural) - Spanish (Chile),GA,,"Microsoft Server Speech Text to Speech Voice (es-CL, LorenzoNeural)",es-CL,es-CL-LorenzoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gonzalo Online (Natural) - Spanish (Colombia),GA,,"Microsoft Server Speech Text to Speech Voice (es-CO, GonzaloNeural)",es-CO,es-CO-GonzaloNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Salome Online (Natural) - Spanish (Colombia),GA,,"Microsoft Server Speech Text to Speech Voice (es-CO, SalomeNeural)",es-CO,es-CO-SalomeNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Juan Online (Natural) - Spanish (Costa Rica),GA,,"Microsoft Server Speech Text to Speech Voice (es-CR, JuanNeural)",es-CR,es-CR-JuanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Maria Online (Natural) - Spanish (Costa Rica),GA,,"Microsoft Server Speech Text to Speech Voice (es-CR, MariaNeural)",es-CR,es-CR-MariaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Belkys Online (Natural) - Spanish (Cuba),GA,,"Microsoft Server Speech Text to Speech Voice (es-CU, BelkysNeural)",es-CU,es-CU-BelkysNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Manuel Online (Natural) - Spanish (Cuba),GA,,"Microsoft Server Speech Text to Speech Voice (es-CU, ManuelNeural)",es-CU,es-CU-ManuelNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Emilio Online (Natural) - Spanish (Dominican Republic),GA,,"Microsoft Server Speech Text to Speech Voice (es-DO, EmilioNeural)",es-DO,es-DO-EmilioNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ramona Online (Natural) - Spanish (Dominican Republic),GA,,"Microsoft Server Speech Text to Speech Voice (es-DO, RamonaNeural)",es-DO,es-DO-RamonaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Andrea Online (Natural) - Spanish (Ecuador),GA,,"Microsoft Server Speech Text to Speech Voice (es-EC, AndreaNeural)",es-EC,es-EC-AndreaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Luis Online (Natural) - Spanish (Ecuador),GA,,"Microsoft Server Speech Text to Speech Voice (es-EC, LuisNeural)",es-EC,es-EC-LuisNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Lorena Online (Natural) - Spanish (El Salvador),GA,,"Microsoft Server Speech Text to Speech Voice (es-SV, LorenaNeural)",es-SV,es-SV-LorenaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rodrigo Online (Natural) - Spanish (El Salvador),GA,,"Microsoft Server Speech Text to Speech Voice (es-SV, RodrigoNeural)",es-SV,es-SV-RodrigoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Javier Online (Natural) - Spanish (Equatorial Guinea),GA,,"Microsoft Server Speech Text to Speech Voice (es-GQ, JavierNeural)",es-GQ,es-GQ-JavierNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Teresa Online (Natural) - Spanish (Equatorial Guinea),GA,,"Microsoft Server Speech Text to Speech Voice (es-GQ, TeresaNeural)",es-GQ,es-GQ-TeresaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Andres Online (Natural) - Spanish (Guatemala),GA,,"Microsoft Server Speech Text to Speech Voice (es-GT, AndresNeural)",es-GT,es-GT-AndresNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Marta Online (Natural) - Spanish (Guatemala),GA,,"Microsoft Server Speech Text to Speech Voice (es-GT, MartaNeural)",es-GT,es-GT-MartaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Carlos Online (Natural) - Spanish (Honduras),GA,,"Microsoft Server Speech Text to Speech Voice (es-HN, CarlosNeural)",es-HN,es-HN-CarlosNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Karla Online (Natural) - Spanish (Honduras),GA,,"Microsoft Server Speech Text to Speech Voice (es-HN, KarlaNeural)",es-HN,es-HN-KarlaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Dalia Online (Natural) - Spanish (Mexico),GA,,"Microsoft Server Speech Text to Speech Voice (es-MX, DaliaNeural)",es-MX,es-MX-DaliaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jorge Online (Natural) - Spanish (Mexico),GA,,"Microsoft Server Speech Text to Speech Voice (es-MX, JorgeNeural)",es-MX,es-MX-JorgeNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Federico Online (Natural) - Spanish (Nicaragua),GA,,"Microsoft Server Speech Text to Speech Voice (es-NI, FedericoNeural)",es-NI,es-NI-FedericoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Yolanda Online (Natural) - Spanish (Nicaragua),GA,,"Microsoft Server Speech Text to Speech Voice (es-NI, YolandaNeural)",es-NI,es-NI-YolandaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Margarita Online (Natural) - Spanish (Panama),GA,,"Microsoft Server Speech Text to Speech Voice (es-PA, MargaritaNeural)",es-PA,es-PA-MargaritaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Roberto Online (Natural) - Spanish (Panama),GA,,"Microsoft Server Speech Text to Speech Voice (es-PA, RobertoNeural)",es-PA,es-PA-RobertoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mario Online (Natural) - Spanish (Paraguay),GA,,"Microsoft Server Speech Text to Speech Voice (es-PY, MarioNeural)",es-PY,es-PY-MarioNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Tania Online (Natural) - Spanish (Paraguay),GA,,"Microsoft Server Speech Text to Speech Voice (es-PY, TaniaNeural)",es-PY,es-PY-TaniaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Alex Online (Natural) - Spanish (Peru),GA,,"Microsoft Server Speech Text to Speech Voice (es-PE, AlexNeural)",es-PE,es-PE-AlexNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Camila Online (Natural) - Spanish (Peru),GA,,"Microsoft Server Speech Text to Speech Voice (es-PE, CamilaNeural)",es-PE,es-PE-CamilaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Karina Online (Natural) - Spanish (Puerto Rico),GA,,"Microsoft Server Speech Text to Speech Voice (es-PR, KarinaNeural)",es-PR,es-PR-KarinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Victor Online (Natural) - Spanish (Puerto Rico),GA,,"Microsoft Server Speech Text to Speech Voice (es-PR, VictorNeural)",es-PR,es-PR-VictorNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Alvaro Online (Natural) - Spanish (Spain),GA,,"Microsoft Server Speech Text to Speech Voice (es-ES, AlvaroNeural)",es-ES,es-ES-AlvaroNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Elvira Online (Natural) - Spanish (Spain),GA,,"Microsoft Server Speech Text to Speech Voice (es-ES, ElviraNeural)",es-ES,es-ES-ElviraNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Alonso Online (Natural) - Spanish (United States),GA,,"Microsoft Server Speech Text to Speech Voice (es-US, AlonsoNeural)",es-US,es-US-AlonsoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Paloma Online (Natural) - Spanish (United States),GA,,"Microsoft Server Speech Text to Speech Voice (es-US, PalomaNeural)",es-US,es-US-PalomaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mateo Online (Natural) - Spanish (Uruguay),GA,,"Microsoft Server Speech Text to Speech Voice (es-UY, MateoNeural)",es-UY,es-UY-MateoNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Valentina Online (Natural) - Spanish (Uruguay),GA,,"Microsoft Server Speech Text to Speech Voice (es-UY, ValentinaNeural)",es-UY,es-UY-ValentinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Paola Online (Natural) - Spanish (Venezuela),GA,,"Microsoft Server Speech Text to Speech Voice (es-VE, PaolaNeural)",es-VE,es-VE-PaolaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sebastian Online (Natural) - Spanish (Venezuela),GA,,"Microsoft Server Speech Text to Speech Voice (es-VE, SebastianNeural)",es-VE,es-VE-SebastianNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Jajang Online (Natural) - Sundanese (Indonesia),GA,,"Microsoft Server Speech Text to Speech Voice (su-ID, JajangNeural)",su-ID,su-ID-JajangNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Tuti Online (Natural) - Sundanese (Indonesia),GA,,"Microsoft Server Speech Text to Speech Voice (su-ID, TutiNeural)",su-ID,su-ID-TutiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rafiki Online (Natural) - Swahili (Kenya),GA,,"Microsoft Server Speech Text to Speech Voice (sw-KE, RafikiNeural)",sw-KE,sw-KE-RafikiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Zuri Online (Natural) - Swahili (Kenya),GA,,"Microsoft Server Speech Text to Speech Voice (sw-KE, ZuriNeural)",sw-KE,sw-KE-ZuriNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Daudi Online (Natural) - Swahili (Tanzania),GA,,"Microsoft Server Speech Text to Speech Voice (sw-TZ, DaudiNeural)",sw-TZ,sw-TZ-DaudiNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Rehema Online (Natural) - Swahili (Tanzania),GA,,"Microsoft Server Speech Text to Speech Voice (sw-TZ, RehemaNeural)",sw-TZ,sw-TZ-RehemaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mattias Online (Natural) - Swedish (Sweden),GA,,"Microsoft Server Speech Text to Speech Voice (sv-SE, MattiasNeural)",sv-SE,sv-SE-MattiasNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sofie Online (Natural) - Swedish (Sweden),GA,,"Microsoft Server Speech Text to Speech Voice (sv-SE, SofieNeural)",sv-SE,sv-SE-SofieNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Pallavi Online (Natural) - Tamil (India),GA,,"Microsoft Server Speech Text to Speech Voice (ta-IN, PallaviNeural)",ta-IN,ta-IN-PallaviNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Valluvar Online (Natural) - Tamil (India),GA,,"Microsoft Server Speech Text to Speech Voice (ta-IN, ValluvarNeural)",ta-IN,ta-IN-ValluvarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Kani Online (Natural) - Tamil (Malaysia),GA,,"Microsoft Server Speech Text to Speech Voice (ta-MY, KaniNeural)",ta-MY,ta-MY-KaniNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Surya Online (Natural) - Tamil (Malaysia),GA,,"Microsoft Server Speech Text to Speech Voice (ta-MY, SuryaNeural)",ta-MY,ta-MY-SuryaNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Anbu Online (Natural) - Tamil (Singapore),GA,,"Microsoft Server Speech Text to Speech Voice (ta-SG, AnbuNeural)",ta-SG,ta-SG-AnbuNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Venba Online (Natural) - Tamil (Singapore),GA,,"Microsoft Server Speech Text to Speech Voice (ta-SG, VenbaNeural)",ta-SG,ta-SG-VenbaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Kumar Online (Natural) - Tamil (Sri Lanka),GA,,"Microsoft Server Speech Text to Speech Voice (ta-LK, KumarNeural)",ta-LK,ta-LK-KumarNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Saranya Online (Natural) - Tamil (Sri Lanka),GA,,"Microsoft Server Speech Text to Speech Voice (ta-LK, SaranyaNeural)",ta-LK,ta-LK-SaranyaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Mohan Online (Natural) - Telugu (India),GA,,"Microsoft Server Speech Text to Speech Voice (te-IN, MohanNeural)",te-IN,te-IN-MohanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Shruti Online (Natural) - Telugu (India),GA,,"Microsoft Server Speech Text to Speech Voice (te-IN, ShrutiNeural)",te-IN,te-IN-ShrutiNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Niwat Online (Natural) - Thai (Thailand),GA,,"Microsoft Server Speech Text to Speech Voice (th-TH, NiwatNeural)",th-TH,th-TH-NiwatNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Premwadee Online (Natural) - Thai (Thailand),GA,,"Microsoft Server Speech Text to Speech Voice (th-TH, PremwadeeNeural)",th-TH,th-TH-PremwadeeNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ahmet Online (Natural) - Turkish (Turkey),GA,,"Microsoft Server Speech Text to Speech Voice (tr-TR, AhmetNeural)",tr-TR,tr-TR-AhmetNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Emel Online (Natural) - Turkish (Turkey),GA,,"Microsoft Server Speech Text to Speech Voice (tr-TR, EmelNeural)",tr-TR,tr-TR-EmelNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Ostap Online (Natural) - Ukrainian (Ukraine),GA,,"Microsoft Server Speech Text to Speech Voice (uk-UA, OstapNeural)",uk-UA,uk-UA-OstapNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Polina Online (Natural) - Ukrainian (Ukraine),GA,,"Microsoft Server Speech Text to Speech Voice (uk-UA, PolinaNeural)",uk-UA,uk-UA-PolinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Gul Online (Natural) - Urdu (India),GA,,"Microsoft Server Speech Text to Speech Voice (ur-IN, GulNeural)",ur-IN,ur-IN-GulNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Salman Online (Natural) - Urdu (India),GA,,"Microsoft Server Speech Text to Speech Voice (ur-IN, SalmanNeural)",ur-IN,ur-IN-SalmanNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Asad Online (Natural) - Urdu (Pakistan),GA,,"Microsoft Server Speech Text to Speech Voice (ur-PK, AsadNeural)",ur-PK,ur-PK-AsadNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Uzma Online (Natural) - Urdu (Pakistan),GA,,"Microsoft Server Speech Text to Speech Voice (ur-PK, UzmaNeural)",ur-PK,ur-PK-UzmaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Madina Online (Natural) - Uzbek (Uzbekistan),GA,,"Microsoft Server Speech Text to Speech Voice (uz-UZ, MadinaNeural)",uz-UZ,uz-UZ-MadinaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Sardor Online (Natural) - Uzbek (Uzbekistan),GA,,"Microsoft Server Speech Text to Speech Voice (uz-UZ, SardorNeural)",uz-UZ,uz-UZ-SardorNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam),GA,,"Microsoft Server Speech Text to Speech Voice (vi-VN, HoaiMyNeural)",vi-VN,vi-VN-HoaiMyNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam),GA,,"Microsoft Server Speech Text to Speech Voice (vi-VN, NamMinhNeural)",vi-VN,vi-VN-NamMinhNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Aled Online (Natural) - Welsh (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (cy-GB, AledNeural)",cy-GB,cy-GB-AledNeural,Male
+audio-24khz-48kbitrate-mono-mp3,Microsoft Nia Online (Natural) - Welsh (United Kingdom),GA,,"Microsoft Server Speech Text to Speech Voice (cy-GB, NiaNeural)",cy-GB,cy-GB-NiaNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Thando Online (Natural) - Zulu (South Africa),GA,,"Microsoft Server Speech Text to Speech Voice (zu-ZA, ThandoNeural)",zu-ZA,zu-ZA-ThandoNeural,Female
+audio-24khz-48kbitrate-mono-mp3,Microsoft Themba Online (Natural) - Zulu (South Africa),GA,,"Microsoft Server Speech Text to Speech Voice (zu-ZA, ThembaNeural)",zu-ZA,zu-ZA-ThembaNeural,Male
+
+--- File: ./requirements.txt ---
+auto-py-to-exe
+edge-tts
+pygame
+keyboard
+pandas
+tkinter
+customtkinter
+
+--- File: ./tts_app.py ---
+import re
+import keyboard
+import pandas as pd
+import edge_tts
+import asyncio
+import os
+import sys
+import customtkinter as ctk
+from tkinter import messagebox
+import threading
+import pygame
+
+# Leer las voces del archivo CSV
+voices = pd.read_csv("output.csv")
+
+
+async def speak(voice, text):
+    base_dir = sys._MEIPASS if getattr(
+        sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
+    audio_path = os.path.join(base_dir, 'output.mp3')
+
+    comm = edge_tts.Communicate(text, voice)
+    await comm.save(audio_fname=audio_path)
+
+    # Inicializar pygame para reproducir el archivo de audio
+    pygame.mixer.init()
+    pygame.mixer.music.load(audio_path)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+    pygame.mixer.music.stop()
+    pygame.mixer.quit()
+    os.remove(audio_path)
+
+
+class TTSApp(ctk.CTk):
+    def __init__(self):
+        super().__init__()
+        self.title("Text-to-Speech App")
+        self.geometry("800x600")
+        self.attributes("-topmost", True)
+        self.is_speaking = False
+
+        # Diccionario para idiomas soportados
+        self.languages = {
+            "French": "fr",
+            "English": "en",
+            "Spanish": "es",
+            "Italian": "it",
+            "Portuguese": "pt",
+            "German": "de",
+            "Korean": "ko",
+            "Russian": "ru",
+            "Japanese": "ja",
+            "Arabic": "ar",
+        }
+
+        # Configuración del tema de la aplicación
+        ctk.set_appearance_mode("dark")
+        ctk.set_default_color_theme("blue")
+
+        # Configuración del marco central
+        self.central_frame = ctk.CTkFrame(self)
+        self.central_frame.pack(fill="both", expand=True, padx=20, pady=20)
+
+        # Selector de Idioma
+        self.label_lang = ctk.CTkLabel(
+            self.central_frame, text="Select Language:")
+        self.label_lang.grid(row=0, column=0, padx=10, pady=10, sticky="w")
+        self.lang_combobox = ctk.CTkComboBox(self.central_frame, values=list(
+            self.languages.keys()), command=self.on_language_selected)
+        self.lang_combobox.grid(row=0, column=1, padx=10, pady=10, sticky="ew")
+        # Define en inglés como idioma predeterminado
+        self.lang_combobox.set("English")
+
+        # Selector de Voz
+        self.label_voice = ctk.CTkLabel(
+            self.central_frame, text="Select a Voice:")
+        self.label_voice.grid(row=1, column=0, padx=10, pady=10, sticky="w")
+        self.voice_mapping = dict(
+            zip(voices['FriendlyName'], voices['ShortName']))
+        self.voices_combobox = ctk.CTkComboBox(
+            self.central_frame, values=[], state="readonly")
+        self.voices_combobox.grid(
+            row=1, column=1, padx=10, pady=10, sticky="ew")
+
+        # Caja de texto para introducir el texto
+        self.label_text = ctk.CTkLabel(self.central_frame, text="Enter Text:")
+        self.label_text.grid(row=2, column=0, padx=10, pady=10, sticky="w")
+        self.text_entry = ctk.CTkTextbox(
+            self.central_frame, height=200, width=500)
+        self.text_entry.grid(row=3, column=0, columnspan=2,
+                             padx=10, pady=10, sticky="nsew")
+
+        # Configurar las filas y columnas para que se expandan adecuadamente
+        self.central_frame.grid_columnconfigure(0, weight=1)
+        self.central_frame.grid_columnconfigure(1, weight=2)
+        self.central_frame.grid_rowconfigure(3, weight=1)
+
+        # Botón flotante para iniciar la conversión de texto a voz
+        self.speak_button = ctk.CTkButton(
+            self, text="🔊", command=self.on_speak, width=50)
+        self.speak_button.configure(font=("Arial", 40, "bold"))
+        self.speak_button.place(relx=0.9, rely=0.9, anchor="se")
+        keyboard.add_hotkey("ctrl+alt+s", self.on_speak)
+
+        self.on_language_selected()
+
+    def on_language_selected(self, event=None):
+        selected_language = self.languages[self.lang_combobox.get()]
+        filtered_voices = voices[voices['Locale'].str.startswith(
+            selected_language)]
+        self.voice_mapping = dict(
+            zip(filtered_voices['FriendlyName'], filtered_voices['ShortName']))
+        self.voices_combobox.configure(values=list(self.voice_mapping.keys()))
+        self.voices_combobox.set(
+            "Microsoft Steffan Online (Natural) - English (United States)")
+
+    def on_speak(self):
+        selected_friendly_name = self.voices_combobox.get()
+        voice = self.voice_mapping.get(selected_friendly_name)
+        text = self.text_entry.get("1.0", "end").strip()
+
+        if self.is_speaking:
+            messagebox.showwarning(
+                "Warning", "The TTS service is already speaking. Please wait.")
+            return
+
+        if not voice:
+            messagebox.showerror("Error", "Please select a voice.")
+            return
+
+        if not text:
+            messagebox.showerror("Error", "Please enter text.")
+            return
+
+        thread = threading.Thread(
+            target=self.threaded_speak, args=(voice, text))
+        thread.start()
+
+    def threaded_speak(self, voice, text):
+        self.is_speaking = True
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+        try:
+            loop.run_until_complete(speak(voice, text))
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
+        finally:
+            loop.close()
+
+        self.is_speaking = False
+
+
+if __name__ == "__main__":
+    app = TTSApp()
+    app.mainloop()
+
+--- File: ./voices_file_generator.py ---
+import edge_tts
+import asyncio
+import csv
+
+async def all_voices():
+    voices = await edge_tts.list_voices()
+    return voices
+
+async def generate_csv():
+    voices = await all_voices()
+
+    header = ['SuggestedCodec', 'FriendlyName', 'Status', 'VoiceTag', 'Name', 'Locale', 'ShortName', 'Gender']
+    rows = []
+
+    for voice in voices:
+        row = [
+            voice['SuggestedCodec'],
+            voice['FriendlyName'],
+            voice['Status'],
+            '',  # VoiceTag is empty in the provided data
+            voice['Name'],
+            voice['Locale'],
+            voice['ShortName'],
+            voice['Gender']
+        ]
+        rows.append(row)
+
+    with open('output.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(header)
+        writer.writerows(rows)
+
+if __name__ == "__main__":
+    asyncio.run(generate_csv())
+
