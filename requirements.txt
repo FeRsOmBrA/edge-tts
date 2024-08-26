@@ -1,0 +1,7 @@
+auto-py-to-exe
+edge-tts
+pygame
+keyboard
+pandas
+tkinter
+customtkinter
