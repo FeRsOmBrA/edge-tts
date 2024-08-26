@@ -37,3 +37,18 @@ To regenerate the voices file, run the following command:
 ```bash
 python voices_file_generator.py
 ```
+
+
+<hr>  
+By:
+<div align="center">
+    <img src="https://i.ibb.co/DVCbGKp/1694197931620-e-1700697600-v-beta-t-V9i-TOhf-Pk-Vf-Bh4-QQxt-QPBVvs-Uyi-c-Emms-Qlh9d-C8p-UA.jpg" alt="hero" style="width: 200px; height: auto; border-radius: 50%;">
+    <h3>Andres Castaño</h3>
+    <p>Data Scientist | Geological Engineer</p>
+    <a href="https://github.com/FeRsOmBrA" target="_blank">
+        <img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github" />
+    </a>
+    <a href="https://www.linkedin.com/in/ferney-castano/" target="_blank">
+        <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
+    </a>
+</div>
